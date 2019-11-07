@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta title="SoftMahal-School Management System">
+  <meta name="description" content="School Management System">
+  <meta name="keywords" content="School,Management Tool">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+
+  <title>Users - School Management System</title>
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-gray-dark">
+    <button class="btn text-white mr-3" onclick="sidebarclose(this)"><i class="fas fa-align-left"></i></button>
+    <a class="navbar-brand" href="#">SoftMahal</a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <button class="btn text-white d-lg-none d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-ellipsis-v"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle info-number text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope mr-2"></i><span class="d-md-none">Messages</span>
+            <span class="badge badge-warning">9</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" toggled>
+            <a class="dropdown-item" href="#">
+            </a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle info-number text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell mr-2"></i><span class="d-md-none">Notifications</span>
+            <span class="badge badge-danger">9</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" toggled>
+            <a class="dropdown-item" href="#">
+            </a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown profile-dropdown">
+          <a class="nav-link dropdown-toggle info-number text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+            Profile
+          </a>
+          <div class="dropdown-menu profile-dropdown-item dropdown-menu-right" style="width:200px;" aria-labelledby="navbarDropdown"
+            toggled>
+            <a class="dropdown-item p-0 profile" href="#">
+              <img src="img/profile.jpg" alt="">
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-user-edit mr-2"></i>Edit Profile</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-question-circle mr-2"></i>Help</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Log Out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0 nodecorationlist">
+            <li class="breadcrumb-item green"><a href="#" class="green"><i class="fas fa-home mr-2"></i>Home</a></li>
+            <li class="breadcrumb-item green"><a href="#" class="green">Users</a></li>
+            <li class="breadcrumb-item active gray" aria-current="page">Create</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="card mb-2">
+      <div class="card-body">
+        <div class="row welcomecard">
+          <div class="col-12">
+            <h5 class="pb-2">Create User</h5>
+            <form class="custom-hover">
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="fname" class="gray">First Name</label>
+                    <input type="text" class="form-control" id="fname" required placeholder="Fname" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$">
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="lname" class="gray">Last Name</label>
+                    <input type="text" class="form-control" id="lname" required placeholder="Lname" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$">
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="uname" class="gray">Username</label>
+                    <input type="text" class="form-control" id="uname" required placeholder="Username" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="email2" class="gray">Email Address</label>
+                    <input type="email" class="form-control" id="email2" placeholder="a@a.com" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="Password1" class="gray">Password</label>
+                    <input type="password" class="form-control" id="Password1" placeholder="************" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="Password2" class="gray">Re-enter Password</label>
+                    <input type="password" class="form-control" id="Password2" placeholder="************" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="role" class="gray pb-0 mb-0">
+                      <h4 class="mb-0">Role</h4>
+                    </label><br>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="admin" value="admin">
+                      <label class="form-check-label" for="admin">Admin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="teacher" value="teacher">
+                      <label class="form-check-label" for="teacher">Teacher</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="student" value="student">
+                      <label class="form-check-label" for="student">Student</label>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+
+              <div class="row">
+                  <div class="col-12 col-md-6">
+                      <div class="form-group">
+                          <label for="role" class="gray pb-0 mb-0">
+                              <h4 class="mb-0">Role</h4>
+                          </label><br>
+                          <div class="form-check form-check-inline">
+                              <input class="custom-checkbox form-check-input " type="checkbox" id="admin"
+                                  value="admin" disabled>
+                              <label class="form-check-label" for="admin">Admin</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input custom-checkbox" type="checkbox" id="teacher"
+                                  value="teacher">
+                              <label class="form-check-label" for="teacher">Teacher</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input custom-checkbox" type="checkbox" id="student"
+                                  value="student">
+                              <label class="form-check-label" for="student">Student</label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group fg3">                           
+                      <label for="role" class="gray pb-0 mb-0">
+                        <h4 class="mb-0">RADIO</h4>
+                      </label><br>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input custom-radio" type="radio" id="AA" value="AA" name="optradio"  disabled>
+                        <label class="form-check-label" for="AA">AA</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input custom-radio" type="radio" id="BB" value="BB" name="optradio">
+                        <label class="form-check-label" for="BB">BB</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input custom-radio" type="radio" id="CC" value="CC" name="optradio">
+                        <label class="form-check-label" for="CC">CC</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input custom-radio" type="radio" id="DD" value="DD" name="optradio">
+                        <label class="form-check-label" for="DD">DD</label>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              
+              <div class="row pl-3">
+                <div class="col-12 ">
+                  <button type="submit" id="checkBtn" class="btn btn-green float-right">Create</button>
+                </div>               
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  
+
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <!-- custom scripts -->
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#checkBtn').click(function () {
+
+        checked = $("input[type=checkbox]:checked").length;
+        if (!checked) {
+          alert("You must check at least one role.");
+          return false;
+        }
+
+        checked3 = $(".fg3 input[type=radio]:checked").length;
+        if (!checked3) {
+          alert("You must check at least one RADIO.");
+          return false;
+        }
+
+      });
+    });
+  </script>
+
+</body>
+
+</html>

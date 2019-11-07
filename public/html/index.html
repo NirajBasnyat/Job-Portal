@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta title="SoftMahal-School Management System">
+  <meta name="description" content="School Management System">
+  <meta name="keywords" content="School,Management Tool">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <title>SoftMahal - School Management System</title>
+</head>
+
+<body>
+  <div id="totop"><i class="fas fa-chevron-up fa-md"></i></div>
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-gray-dark">
+    <button class="btn text-white mr-3" onclick="sidebarclose(this)"><i class="fas fa-align-left"></i></button>
+    <a class="navbar-brand" href="#">SoftMahal</a>
+    <!-- <button class="navbar-toggler aria-expanded="false" aria-label="Toggle navigation"> -->
+    <button class="btn text-white d-lg-none d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-ellipsis-v"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle info-number text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope mr-2"></i><span class="d-md-none">Messages</span>
+            <span class="badge badge-warning">9</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <div class="list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="row">
+                  <div class="image col-1 col-sm-1 col-md-2 col-lg-1 pt-2 pr-2 pl-0">
+                    <span class="p-1">
+                      <img src="img/profile.jpg" alt="Profile Image" /></span>
+                  </div>
+                  <div class="col-10 col-sm-10 col-md-10 col-lg-10 pr-2 pr-1">
+                    <div class="row ">
+                      <div class="col-sm-12">
+                        <span class="name">
+                          John Smith
+                        </span>
+                        <small class="text-muted time pull-right pr-2 green">1 days ago</small><br>
+                      </div>
+                      <div class="col-sm-12 col-md-12 pr-1">
+                        <div class="message">
+                          Just text out your question and watch the responses roll in.
+                        </div>
+                        <small class="text-muted">Newsletters</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="row">
+                  <div class="image col-1 col-sm-1 col-md-2 col-lg-1 pt-2 pr-2 pl-0">
+                    <span class="p-1">
+                      <img src="img/profile.jpg" alt="Profile Image" /></span>
+                  </div>
+                  <div class="col-10 col-sm-10 col-md-10 col-lg-10 pr-2 pr-1">
+                    <div class="row ">
+                      <div class="col-sm-12">
+                        <span class="name">
+                          John Smith
+                        </span>
+                        <small class="text-muted time pull-right pr-2 green">2 days ago</small><br>
+                      </div>
+                      <div class="col-sm-12 col-md-12 pr-1">
+                        <div class="message">
+                          Direct Messaging is a tool that students use to ask the instructor any questions about
+                          the
+                          course content. This is a tool that students and instructors can use to ask and answer
+                          questions about the course content, and for instructors to use to get dedicated feedback
+                          on
+                          the course. This is meant for 1:1 learning and feedback, not to promote or market to
+                          students.
+                        </div>
+                        <small class="text-muted">Direct Messaging Features</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="row ">
+                  <div class="image col-1 col-sm-1 col-md-2 col-lg-1 pt-2 pr-2 pl-0">
+                    <span class="p-1">
+                      <img src="img/profile.jpg" alt="Profile Image" /></span>
+                  </div>
+                  <div class="col-10 col-sm-10 col-md-10 col-lg-10 pr-2 pr-1">
+                    <div class="row ">
+                      <div class="col-sm-12">
+                        <span class="name">
+                          John Smith
+                        </span>
+                        <small class="text-muted time pull-right pr-2 green">3 days ago</small><br>
+                      </div>
+                      <div class="col-sm-12 col-md-12 pr-1">
+                        <div class="message">
+                          Hi, Jennifer Parker Welcome to the Canvas Community! I am so delighted that your Canvas
+                          training has directed you here, and you'll find that we are a large group of passionate
+                          educators ready and willing to help you.
+                        </div>
+                        <small class="text-muted">Welcome Freshers</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start nav-seemore">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <span> <b> See All </b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle info-number text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell mr-2"></i><span class="d-md-none">Notifications</span>
+            <span class="badge badge-danger">9</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" toggled>
+            <div class="list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="row">
+                  <div class="image col-1 col-sm-1 col-md-2 col-lg-1 pt-2 pr-2 pl-0">
+                    <span class="p-1">
+                      <img src="img/profile.jpg" alt="Profile Image" /></span>
+                  </div>
+                  <div class="col-10 col-sm-10 col-md-10 col-lg-10 pr-2 pr-1">
+                    <div class="row ">
+                      <div class="col-sm-12">
+                        <span class="name">
+                          John Smith
+                        </span>
+                        <small class="text-muted time pull-right pr-2 green">1 days ago</small><br>
+                      </div>
+                      <div class="col-sm-12 col-md-12 pr-1">
+                        <div class="message">
+                          Just text out your question and watch the responses roll in.
+                        </div>
+                        <small class="text-muted">Newsletters</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="row">
+                  <div class="image col-1 col-sm-1 col-md-2 col-lg-1 pt-2 pr-2 pl-0">
+                    <span class="p-1">
+                      <img src="img/profile.jpg" alt="Profile Image" /></span>
+                  </div>
+                  <div class="col-10 col-sm-10 col-md-10 col-lg-10 pr-2 pr-1">
+                    <div class="row ">
+                      <div class="col-sm-12">
+                        <span class="name">
+                          John Smith
+                        </span>
+                        <small class="text-muted time pull-right pr-2 green">2 days ago</small><br>
+                      </div>
+                      <div class="col-sm-12 col-md-12 pr-1">
+                        <div class="message">
+                          Direct Messaging is a tool that students use to ask the instructor any questions about
+                          the
+                          course content. This is a tool that students and instructors can use to ask and answer
+                          questions about the course content, and for instructors to use to get dedicated feedback
+                          on
+                          the course. This is meant for 1:1 learning and feedback, not to promote or market to
+                          students.
+                        </div>
+                        <small class="text-muted">Direct Messaging Features</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="row">
+                  <div class="image col-1 col-sm-1 col-md-2 col-lg-1 pt-2 pr-2 pl-0">
+                    <span class="p-1">
+                      <img src="img/profile.jpg" alt="Profile Image" /></span>
+                  </div>
+                  <div class="col-10 col-sm-10 col-md-10 col-lg-10 pr-2 pr-1">
+                    <div class="row ">
+                      <div class="col-sm-12">
+                        <span class="name">
+                          John Smith
+                        </span>
+                        <small class="text-muted time pull-right pr-2 green">3 days ago</small><br>
+                      </div>
+                      <div class="col-sm-12 col-md-12 pr-1">
+                        <div class="message">
+                          Hi, Jennifer Parker Welcome to the Canvas Community! I am so delighted that your Canvas
+                          training has directed you here, and you'll find that we are a large group of passionate
+                          educators ready and willing to help you.
+                        </div>
+                        <small class="text-muted">Welcome Freshers</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start nav-seemore">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <span> <b> See All </b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </li>
+        <li class="nav-item dropdown profile-dropdown">
+          <a class="nav-link dropdown-toggle info-number text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+            Profile
+          </a>
+          <div class="dropdown-menu profile-dropdown-item dropdown-menu-right p-0" style="width:200px;" aria-labelledby="navbarDropdown"
+            toggled>
+            <a class="dropdown-item p-0 profile" href="#">
+              <img src="img/profile.jpg" alt="">
+            </a>
+            <a class="dropdown-item mt-2" href="#"><i class="fas fa-user-edit mr-2"></i>Edit Profile</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-question-circle mr-2"></i>Help</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt mr-2"></i>Log Out</a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    </li>
+
+    </ul>
+    </div>
+
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0 nodecorationlist">
+            <li class="breadcrumb-item green"><a href="#" class="green"><i class="fas fa-home mr-2"></i>Home</a></li>
+        </nav>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body" id="welcomebox">
+        <div class="row welcomecard">
+          <div class="col-12">
+            <span aria-hidden="true" class="close" aria-label="Close" onclick="closewelcome()"> <i class="fas fa-times fa-md fa-xs mb-2"></i></span>
+            <h5>Welcome to your dashoard <span class="green"><b>User001</b></span></h5>
+            <p class="gray">Perform some actions now</p>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <p>
+                  <b>Get Started</b>
+                </p>
+                <button class="btn btn-green">Customize your Profile</button>
+                <p class="gray mt-3">or do something <a class="green" href="#">different</a></p>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <p>
+                  <b>
+                    Next Step
+                  </b>
+                </p>
+                <ul class="nodecorationlist">
+                  <li><a class="gray " href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-book green mr-1"></i>
+                      Upload a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <p>
+                  <b>
+                    More Actions
+                  </b>
+                </p>
+                <ul class="nodecorationlist">
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-book green mr-1"></i>
+                      Upload a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                  <li><a class="gray" href="#" target="_blank" rel="noopener noreferrer"> <i class="fas fa-pen green mr-1"></i>
+                      Submit a homework</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="row mb-3">
+      <div class="col-md-4 col-lg-4 col-sm-12 mt-3">
+        <div class="card eq-height">
+          <div class="card-body ">
+              <h5 class="gray">Attandence</h5>
+            <div class="chart-wrapper cnt">
+              <canvas id="lineChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12 mt-3">
+        <div class="card eq-height">
+          <div class="card-body">
+            <h5 class="gray">Attandence</h5>
+            <div class="chart-wrapper cnt">
+              <canvas id="pieChart" height="150px"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12 mt-3">
+        <div class="card eq-height">
+          <div class="card-body">
+            <h5 class="gray">Attandence</h5>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="card">
+      <div class="card-body">
+        <div class="row countrow">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-6 count_tile count_border textwrap">
+            <span class="counttop">
+              <i class="fas fa-user mr-2"></i>Total Users</span>
+            <div class="count">2500</div>
+            <span class="countbottom">
+              <i class="green mr-2">4% <i class="fas fa-level-up-alt"></i></i>From last week
+            </span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-6 count_tile count_border textwrap">
+            <span class="counttop">
+              <i class="fas fa-clock mr-2"></i>Average Time</span>
+            <div class="count">123.50</div>
+            <span class="countbottom">
+              <i class="green mr-2">8% <i class="fas fa-level-up-alt"></i></i>From last week
+            </span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-6 count_tile count_border textwrap">
+            <span class="counttop">
+              <i class="fas fa-male mr-2"></i>Total Males</span>
+            <div class="green count">4567</div>
+            <span class="countbottom">
+              <i class="green mr-2 ">14% <i class="fas fa-level-up-alt"></i></i>From last week
+            </span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-6 count_tile count_border textwrap">
+            <span class="counttop">
+              <i class="fas fa-female mr-2"></i>Total Females</span>
+            <div class="count">2315</div>
+            <span class="countbottom">
+              <i class="red mr-2">9% <i class="fas fa-level-down-alt"></i></i>From last week
+            </span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-6 count_tile count_border textwrap">
+            <span class="counttop">
+              <i class="fas fa-dolly mr-2"></i>Total Collection</span>
+            <div class="count">7325</div>
+            <span class="countbottom">
+              <i class="green mr-2">41% <i class="fas fa-level-up-alt"></i></i>From last week
+            </span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-6 count_tile count_border textwrap">
+            <span class="counttop">
+              <i class="fas fa-link mr-2"></i>Total Connection</span>
+            <div class="count">8456</div>
+            <span class="countbottom">
+              <i class="green mr-2">24% <i class="fas fa-level-up-alt"></i></i>From last week
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-4 col-sm-12 mt-3">
+        <div class="card todo " id="todobox">
+          <div class="card-header">
+            <span class="float-right topicons" onclick="closetodo()">
+              <i class="fas fa-times fa-md"></i>
+            </span>
+            <span class="float-right mr-3 topicons">
+              <i class="fas fa-angle-down fa-lg" id="aa" onclick="todominimize(todo)"></i>
+            </span>
+            <h6 class="gray">To Do</h6>
+          </div>
+
+          <div class="card-body p-0 todolist" id="todo">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-inline">
+                <div class="row p-1">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Add Todo..." aria-label="Add Todo..."
+                      aria-describedby="todoadd">
+                    <div class="input-group-append">
+                      <button class="btn btn-green btn-md" type="button"><i class="fas fa-plus fa-md"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-inline">
+                <div class="row p-1">
+                  <div class="col-9 pr-0">
+                    <p class="gray m-0 list-inline-item">
+                      <input type="checkbox" class="custom-checkbox mr-2" id="td1">
+                      <label for="td1" class="mb-0 d-inline-block"> Dapibus ac facilisis in Dapibus ac facilisis
+                        inDapibus ac in</label>
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <p class="list-inline-item mb-0" style="float:right;">
+                      <a href="#" class="actionicon fas fa-edit fa-sm "></a>
+                      <a href="#" class="actionicon fas fa-trash fa-sm"></a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-inline">
+                <div class="row p-1">
+                  <div class="col-9 pr-0">
+                    <p class="gray m-0 list-inline-item">
+                      <input type="checkbox" class="custom-checkbox mr-2" id="td3">
+                      <label for="td3" class="mb-0 d-inline-block"> Dapibus ac facilisis in Dapibus ac facilisis
+                        inDapibus acc facilisis in</label>
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <p class="list-inline-item mb-0" style="float:right;">
+                      <a href="#" class="actionicon fas fa-edit fa-sm "></a>
+                      <a href="#" class="actionicon fas fa-trash fa-sm"></a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-inline">
+                <div class="row p-1">
+                  <div class="col-9 pr-0">
+                    <p class="gray m-0 list-inline-item">
+                      <input type="checkbox" class="custom-checkbox mr-2" id="td4">
+                      <label for="td4" class="mb-0 d-inline-block"> Dapibus ac facilisis in Dapibus ac facilisis
+                        inDapibus ac facilisis.
+                        inDapibus ac facilisis in</label>
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <p class="list-inline-item mb-0" style="float:right;">
+                      <a href="#" class="actionicon fas fa-edit fa-sm "></a>
+                      <a href="#" class="actionicon fas fa-trash fa-sm"></a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-inline">
+                <div class="row p-1">
+                  <div class="col-9 pr-0">
+                    <p class="gray m-0 list-inline-item">
+                      <input type="checkbox" class="custom-checkbox mr-2" id="td5">
+                      <label for="td5" class="mb-0 d-inline-block"> Dapibus ac facilisis </label>
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <p class="list-inline-item mb-0" style="float:right;">
+                      <a href="#" class="actionicon fas fa-edit fa-sm "></a>
+                      <a href="#" class="actionicon fas fa-trash fa-sm"></a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-inline">
+                <div class="row p-1">
+                  <div class="col-9 pr-0">
+                    <div class="gray m-0 list-inline-item">
+                      <form class="custom-hover m-0 p-0 ">
+                        <div class="form-group d-inline">
+                          <label for="td2" class="mb-0 ">
+                            <textarea class="form-control" id="td2" rows="2" cols="100%" placeholder="EDIT your todo..."></textarea>
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <p class="list-inline-item mb-0" style="float:right;">
+                      <a href="#" class="actionicon fas fa-save fa-sm "></a>
+                      <a href="#" class="actionicon fas fa-trash fa-sm"></a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-sm-12 mt-3">
+        <div class="card notice-card" id="noticebox">
+          <div class="card-header">
+            <span class="float-right topicons" onclick="closenotice()">
+              <i class="fas fa-times fa-md"></i>
+            </span>
+            <span class="float-right mr-3 topicons">
+              <i class="fas fa-angle-down fa-lg " onclick="noticesminimize(this)"></i>
+            </span>
+            <h6 class="gray">Notices</h6>
+          </div>
+          <div class="card-body" id="notices">
+            <div class="row notice">
+              <div class="col-sm-2 col-md-2 text-center">
+                <img src="img/profile.jpg">
+                <div>
+                  <p class="green textwrap mb-0">John Doe</p>
+                  <p class="gray textwrap">General Manager</p>
+                </div>
+              </div>
+              <div class="col-sm-10 col-md-10">
+                <h5 class="gray textwrap">This is to notify all that it will be holiday Tommorrow</h5>
+                <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eligendi hic impedit
+                  cum voluptatibus consectetur eum! Soluta neque optio eum quos, quidem ipsum qui est a, debitis ab
+                  laudantium quibusdam.</p>
+                <a href="#" class="badge badge-danger p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-pdf fa-lg mr-2"></i>
+                    Filename.pdf
+                  </span>
+                </a>
+                <a href="#" class="badge badge-success p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-excel fa-lg mr-2"></i>
+                    Filename.xls
+                  </span>
+                </a>
+                <a href="#" class="badge badge-warning p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-excel fa-lg mr-2"></i>
+                    Filename.ppt
+                  </span>
+                </a>
+                <a href="#" class="badge badge-primary p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-image fa-lg mr-2"></i>
+                    Filename.jpg
+                  </span>
+                </a>
+                <a href="#" class="badge badge-info p-2 mb-2">
+                  <span onclick="alert('Download ?')">
+                    <i class="fas fa-file-image fa-lg mr-2"></i>
+                    Filename.png
+                  </span>
+                </a>
+                <hr>
+              </div>
+            </div>
+            <div class="row notice">
+              <div class="col-sm-2 col-md-2 text-center">
+                <img src="img/profile.jpg">
+                <div>
+                  <p class="green textwrap mb-0">John Doe</p>
+                  <p class="gray textwrap">General Manager</p>
+                </div>
+              </div>
+              <div class="col-sm-10 col-md-10">
+                <h5 class="gray textwrap">This is to notify all that it will be holiday Tommorrow</h5>
+                <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eligendi hic impedit
+                  cum voluptatibus consectetur eum! Soluta neque optio eum quos, quidem ipsum qui est a, debitis ab
+                  laudantium quibusdam.</p>
+                <a href="#" class="badge badge-danger p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-pdf fa-lg mr-2"></i>
+                    Filename.pdf
+                  </span>
+                </a>
+                <a href="#" class="badge badge-success p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-excel fa-lg mr-2"></i>
+                    Filename.xls
+                  </span>
+                </a>
+                <a href="#" class="badge badge-warning p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-excel fa-lg mr-2"></i>
+                    Filename.ppt
+                  </span>
+                </a>
+                <a href="#" class="badge badge-primary p-2 mb-2">
+                  <span>
+                    <i class="fas fa-file-image fa-lg mr-2"></i>
+                    Filename.jpg
+                  </span>
+                </a>
+                <a href="#" class="badge badge-info p-2 mb-2">
+                  <span onclick="alert('Download ?')">
+                    <i class="fas fa-file-image fa-lg mr-2"></i>
+                    Filename.png
+                  </span>
+                </a>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="position: static;bottom:0px;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <span class="gray">
+              © Copyright -
+              <a href="https://softmahal.com" class="green text-decoration-none" target="_blank" rel="noopener noreferrer">
+                Softmahal Technologies Pvt. Ltd. </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <!-- custom scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    let myChart = document.getElementById('pieChart').getContext('2d');
+
+    // Global Options
+
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#73879C';
+
+    let massPopChart = new Chart(pieChart, {
+      type: 'pie', // bar, horizontalBar, pie, line, , radar, polarArea
+      data: {
+        labels: ['A', 'B', 'C', 'D', 'W', 'F'],
+        datasets: [{
+          label: 'DATASER',
+          data: [
+            69,
+            45,
+            16,
+            99,
+            62,
+            72
+          ],
+          //backgroundColor:'green',
+          backgroundColor: [
+            '#1ABB9C',
+            '#73879C',
+            '#008080',
+            '#00FFFF',
+            '#4b0082',
+            '#800080'
+          ],
+          borderWidth: 2,
+          borderColor: '#FFF',
+          hoverBorderWidth: 0,
+          hoverBorderColor: '#000'
+        }]
+      },
+      options: {
+        responsive:true,
+        title: {
+          display: false,
+          text: 'a pie chart',
+          fontSize: 25
+        },
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: {
+            fontColor: '#000',
+            fontSize: 12,
+            boxWidth: 20
+          }
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0
+          }
+        },
+        tooltips: {
+          fontSize: 10,
+          enabled: true
+        }
+      }
+    });
+
+
+    new Chart(document.getElementById("lineChart"), {
+      type: 'line',
+      data: {
+        labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN'],
+        datasets: [{
+          data: [86, 14, 10, 16, 10, 11, 1, 2, 7, 2],
+          label: "JAN",
+          borderWidth: 2,
+          borderColor: "#3e95cd",
+          fill: false
+        }, {
+          data: [82, 30, 41, 52, 63, 80, 94, 2, 70, 57],
+          label: "FEB",
+          borderWidth: 2,
+          borderColor: "#8e5ea2",
+          fill: false
+        }, {
+          data: [16, 17, 17, 19, 20, 76, 48, 47, 75, 74],
+          label: "MAR",
+          borderWidth: 2,
+          borderColor: "#3cba9f",
+          fill: false
+        }, {
+          data: [40, 20, 10, 16, 24, 38, 74, 17, 50, 74],
+          label: "APR",
+          borderWidth: 2,
+          borderColor: "#e8c3b9",
+          fill: false
+        }, {
+          data: [6, 3, 2, 2, 7, 26, 82, 17, 31, 33],
+          label: "MAY",
+          borderWidth: 2,
+          borderColor: "#c45850",
+          fill: false
+        }, {
+          data: [6, 3, 2, 2, 7, 26, 82, 17, 31, 33],
+          label: "JUN",
+          borderWidth: 2,
+          borderColor: "#c45850",
+          fill: false
+        }]
+      },
+      options: {
+        responsive:true,
+        title: {
+          display: false,
+          text: 'Growth'
+        },
+        hover: {
+          animationDuration: 0, // duration of animations when hovering an item
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0
+          }
+        },
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: {
+            fontColor: '#000',
+            fontSize: 12,
+            boxWidth: 20
+          }
+        },
+      }
+    }).responsive;
+  </script>
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop()) {
+        $('#totop').fadeIn();
+      } else {
+        $('#totop').fadeOut();
+      }
+    });
+
+    $("#totop").click(function () {
+      //1 second of animation time
+      //html works for FFX but not Chrome
+      //body works for Chrome but not FFX
+      //This strange selector seems to work universally
+      $("html, body").animate({
+        scrollTop: 0
+      }, 1);
+    });
+  </script>
+  
+</body>
+
+</html>
