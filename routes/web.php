@@ -19,6 +19,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 
     //----------------------------------------------------------------------((DEFAULT))
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('notice', 'NoticeController');
 
     //------------------------------------------------------------------------------------------------------************((JOB SEEKER))
 
@@ -53,12 +54,12 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     });
     //---------------------------------------------------------------------((ALL JOBS))
     Route::get('seeker/all_jobs', 'SeekerController@index')->name('all_jobs');
-    Route::get('seeker/my_jobs','SeekerController@myJobs')->name('my_jobs');
+    Route::get('seeker/my_jobs', 'SeekerController@myJobs')->name('my_jobs');
 
     //---------------------------------------------------------------------((BOOKMARK JOBS))
-    Route::get('seeker/add_bookmark/{id}','BookmarksController@addBookmark')->name('add_bookmark');
-    Route::get('seeker/remove_bookmark/{id}','BookmarksController@removeBookmark')->name('remove_bookmark');
-    Route::get('seeker/my_bookmarks','BookmarksController@myBookmarks')->name('my_bookmarks');
+    Route::get('seeker/add_bookmark/{id}', 'BookmarksController@addBookmark')->name('add_bookmark');
+    Route::get('seeker/remove_bookmark/{id}', 'BookmarksController@removeBookmark')->name('remove_bookmark');
+    Route::get('seeker/my_bookmarks', 'BookmarksController@myBookmarks')->name('my_bookmarks');
 
     //---------------------------------------------------------------------((MAIN PROFILE))
     Route::get('seeker/profile/{name}', 'SeekerController@profile')->name('seeker_profile');
@@ -81,7 +82,6 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::post('seeker/education/delete', 'EducationsController@delete')->name('seeker_education.delete');
 
 
-
     //-----------------------------------------------------------------------------------------------------------************((JOB PROVIDER))
 
     //---------------------------------------------------------------------((MAIN PROFILE))
@@ -94,22 +94,22 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     //---------------------------------------------------------------------((JOB SECTION))
     Route::resource('jobs', 'JobsController');
     //---------------------------------------------------------------------((APPLICANT SECTION))
-    Route::get('application/show/{id}','ApplicantController@show')->name('application_show');
-    Route::get('applicant/view/{id}','ApplicantController@view')->name('applicant_view');
-    Route::post('application/store/{id}','ApplicantController@store')->name('application_store');
+    Route::get('application/show/{id}', 'ApplicantController@show')->name('application_show');
+    Route::get('applicant/view/{id}', 'ApplicantController@view')->name('applicant_view');
+    Route::post('application/store/{id}', 'ApplicantController@store')->name('application_store');
 
     //---------------------------------------------------------------------((JOB PROPOSAL))
-    Route::get('proposal/shortlist/{id}','ProposalsController@shortlist')->name('proposal_shortlist');
-    Route::get('proposal/{id}/{user}/hire','ProposalsController@hire')->name('proposal_hire');
-    Route::get('proposal/{id}/{user}/reject','ProposalsController@reject')->name('proposal_reject');
+    Route::get('proposal/shortlist/{id}', 'ProposalsController@shortlist')->name('proposal_shortlist');
+    Route::get('proposal/{id}/{user}/hire', 'ProposalsController@hire')->name('proposal_hire');
+    Route::get('proposal/{id}/{user}/reject', 'ProposalsController@reject')->name('proposal_reject');
 
     //-----------------------------------------------------------------------------------------------------------************((SITE ADMIN))
-    Route::get('/dashboard','AdminController@dashboard')->name('dashboard');
-    Route::get('admin/all_users','AdminController@index')->name('admin.all_users');
-    Route::get('admin/banProvider/{id}','AdminController@banProvider')->name('admin.ban_provider');
-    Route::get('admin/unbanProvider/{id}','AdminController@unbanProvider')->name('admin.unban_provider');
-    Route::get('admin/banSeeker/{id}','AdminController@banSeeker')->name('admin.ban_seeker');
-    Route::get('admin/unbanSeeker/{id}','AdminController@unbanSeeker')->name('admin.unban_seeker');
+    Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
+    Route::get('admin/all_users', 'AdminController@index')->name('admin.all_users');
+    Route::get('admin/banProvider/{id}', 'AdminController@banProvider')->name('admin.ban_provider');
+    Route::get('admin/unbanProvider/{id}', 'AdminController@unbanProvider')->name('admin.unban_provider');
+    Route::get('admin/banSeeker/{id}', 'AdminController@banSeeker')->name('admin.ban_seeker');
+    Route::get('admin/unbanSeeker/{id}', 'AdminController@unbanSeeker')->name('admin.unban_seeker');
 
 
 });
