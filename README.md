@@ -11,5 +11,7 @@
 php artisan serve
 php artisan migrate
 ```
+**!Add [Mailtrap](https://mailtrap.io/) to use register functionality**
+
 
 **Enjoy!!!**
