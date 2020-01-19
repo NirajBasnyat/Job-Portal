@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use DB;
-use App\Notice;
 use App\Role;
 use App\User;
+use App\Notice;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Notifications\NoticeAddedNotification;
@@ -160,7 +160,7 @@ class NoticeController extends Controller
         $user = User::where('id', $notice->user_id)->first();
 
         //----to determine the recipient roles of the notice.
-        
+
         $arr = [];
         //getting id of roles in an array
         foreach ($notice->roles()->get() as $role) {

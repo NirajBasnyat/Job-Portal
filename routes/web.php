@@ -20,6 +20,9 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     //----------------------------------------------------------------------((DEFAULT))
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('notice', 'NoticeController');
+    Route::get('testimonial/approve/{id}','TestimonialController@approve')->name('testimonial.approve');
+    Route::get('testimonial/disapprove/{id}','TestimonialController@disapprove')->name('testimonial.disapprove');
+    Route::resource('testimonial', 'TestimonialController')->except('show');
 
     //------------------------------------------------------------------------------------------------------************((JOB SEEKER))
 
@@ -110,6 +113,5 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('admin/unbanProvider/{id}', 'AdminController@unbanProvider')->name('admin.unban_provider');
     Route::get('admin/banSeeker/{id}', 'AdminController@banSeeker')->name('admin.ban_seeker');
     Route::get('admin/unbanSeeker/{id}', 'AdminController@unbanSeeker')->name('admin.unban_seeker');
-
 
 });
