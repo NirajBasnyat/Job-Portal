@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use DB;
+use Session;
 use App\Role;
 use App\User;
 use App\Notice;
@@ -83,6 +84,8 @@ class NoticeController extends Controller
         if (\Notification::send($user, new NoticeAddedNotification(Notice::latest('id')->first()))) {
             return back();
         }
+        Session::flash('success', 'Notice Added Successfully!');
+        return redirect('notice');
     }
 
     /**
@@ -142,7 +145,7 @@ class NoticeController extends Controller
 
         $notice->roles()->sync($request->roles);
 
-//        Session::flash('success', 'Notice updated successfully');
+        Session::flash('success', 'Notice updated successfully');
         return redirect()->route('notice.index')->with('success', 'Notice Updated');
     }
 
@@ -187,7 +190,7 @@ class NoticeController extends Controller
 
         $notice->roles()->detach();
         $notice->delete();
-
+        Session::flash('success', 'Notice Destroyed Successfully!');
         return redirect()->route('notice.index')->with('success', 'Notice Deleted');
     }
 }

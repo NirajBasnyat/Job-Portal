@@ -7,19 +7,18 @@
 
 use Illuminate\Support\Facades\DB;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes(['verify' => true]);
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------#
 
+Route::get('/','FrontEndController@index')->name('index');
+
+
 Route::group(['middleware' => ['auth', 'verified']], function () {
 
     //----------------------------------------------------------------------((DEFAULT))
-    Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('notice', 'NoticeController');
+    Route::get('/home', 'HomeController@index')->name('home');
     Route::get('testimonial/approve/{id}','TestimonialController@approve')->name('testimonial.approve');
     Route::get('testimonial/disapprove/{id}','TestimonialController@disapprove')->name('testimonial.disapprove');
     Route::resource('testimonial', 'TestimonialController')->except('show');
@@ -95,6 +94,8 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('company/{id}', 'ProvidersController@show')->name('provider_company.show');
 
     //---------------------------------------------------------------------((JOB SECTION))
+    //------------job based on category
+    Route::get('/jc/{id}','JobsController@cat')->name('cat');
     Route::resource('jobs', 'JobsController');
     //---------------------------------------------------------------------((APPLICANT SECTION))
     Route::get('application/show/{id}', 'ApplicantController@show')->name('application_show');

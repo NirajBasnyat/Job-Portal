@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a97e99-e36b-4d95-a8b8-7572e85fd9c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JobsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JobsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestimonialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestimonialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_18_050415_create_testimonials_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_18_050415_create_testimonials_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Notice/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Notice/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_partialstest/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_partialstest/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_partialstest/_script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_partialstest/_script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_partialstest/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_partialstest/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome1.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,13 +42,16 @@
     <setting file="file://$PROJECT_DIR$/app/Http/Middleware/Seeker.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_script.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_navbar.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/welcome.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/TestimonialController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/Testimonials/index.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/_inc/_nav.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ApplicantController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ProposalsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/Proposal/shortlist.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/public/css/main.scss" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/seeds/JobsTableSeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Kernel.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -55,12 +67,13 @@
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/Job_Seeker/all_jobs.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/SeekerController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/SeekerController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/routes/web.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Job.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/public/app/css/style.css" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_sidebar.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/Jobs/show.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/JobsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/JobsController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/Job_Provider/company.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -164,6 +177,11 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -230,6 +248,9 @@
       <workItem from="1579255445492" duration="258000" />
       <workItem from="1579323015186" duration="5611000" />
       <workItem from="1579344257852" duration="1119000" />
+      <workItem from="1579425252679" duration="9504000" />
+      <workItem from="1579586834891" duration="4281000" />
+      <workItem from="1579594069563" duration="3741000" />
     </task>
     <servers />
   </component>
@@ -250,22 +271,42 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="155" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1579595102910">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="416" y="155" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1579595102910" />
     <state x="-312" y="38" key="SettingsEditor" timestamp="1579239645644">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="-312" y="38" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1579239645644" />
-    <state x="309" y="236" width="748" height="334" key="com.intellij.ide.util.TipDialog" timestamp="1579344258404">
+    <state width="628" height="445" key="SwitcherDM" timestamp="1579596809128">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="309" y="236" width="748" height="334" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1579344258404" />
-    <state x="233" y="78" width="900" height="638" key="find.popup" timestamp="1579244490757">
+    <state width="628" height="445" key="SwitcherDM/0.27.1366.741@0.27.1366.741" timestamp="1579596809128" />
+    <state x="309" y="236" width="748" height="334" key="com.intellij.ide.util.TipDialog" timestamp="1579594427790">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="233" y="78" width="900" height="638" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1579244490757" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579344320946">
+    <state x="309" y="236" width="748" height="334" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1579594427790" />
+    <state x="293" y="27" width="770" height="739" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579433065955">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1579344320946" />
+    <state x="293" y="27" width="770" height="739" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1579433065955" />
+    <state x="425" y="312" width="506" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579587836187">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="425" y="312" width="506" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1579587836187" />
+    <state x="233" y="78" width="900" height="638" key="find.popup" timestamp="1579589434198">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="233" y="78" width="900" height="638" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1579589434198" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1579430974088">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.27.1366.741@0.27.1366.741" timestamp="1579430974088" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579597567560">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1579597567560" />
     <state x="400" y="304" width="556" height="184" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1579327872182">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

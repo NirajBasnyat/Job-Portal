@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	box-sizing: border-box;
+	text-align: justify;
+	overflow-x: hidden;
+
+}
+body{
+	background: #f4f4f4;
+}
+.active{
+	font-weight: bolder;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*
+ * ===================================================================
+ * 1--------------------------HEADER-SECTION--------------------------
+ * -------------------------------------------------------------------
+ */
+
+
+/*-----------------------Banner Image and Text-------------------------*/
+nav{
+	background: #002533;
+}
+nav .nav-item a{
+	color: #f4f4f4;
+	transition: ease-in .2s;
+	font-family: helvetica;
+    padding: 1px .9em;
+    margin: 0 10px;
+}
+
+nav .nav-item a:hover{
+	text-decoration: none;
+    color: #fff;
+}
+
+
+.hero{
+	background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../images/image.jpeg')  ;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.header-form{
+	padding-top: 35vh;
+	padding-left: 20vw;
+}
+.header-form label{
+    background: -webkit-linear-gradient(#191654, #43C6AC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	/*color: #B5A5FF;*/
+	font-weight: bolder;
+}
+
+/*--------------------------Download Buttons-------------------------*/
+.buttons{
+	border: 2px solid #1b4b72;
+	color: #fff;
+	padding: .4em .8em;
+	font-size: 18px;
+	font-family: tahoma,sans-serif;
+	transition: ease-in .4s;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.buttons:hover{
+	background: #1b4b72;
+	color: #f4f4f4;
+}
+.card a{
+	text-decoration: none;
+}
+.card:hover{
+	background: #f4f4f4;
+	transition: ease-in .4s;
+}
+
+.card-img-top{
+	height: 80px;
+	width: 70px;
+	margin: 0 auto;
+}
+h3,h4 {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#191654, #43C6AC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h4{
+	font-size: 24px;
+}
+
+/*
+ * ===================================================================
+ * 4-------------------------FOOTER-SECTION---------------------------
+ * -------------------------------------------------------------------
+ */
+ footer{
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	padding: 2em;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: serif,helvetical, cursive;
+	color: #f4f4f4;
+}
+
+
+/*
+ * ===================================================================
+ * 3---------------------------MEDIA QUERIES--------------------------
+ * -------------------------------------------------------------------
+ */
+ @media screen and (max-width:900px) {
+	/*--------------Navigation section-------------*/
+
+	.logo{
+		display: none;
+	}
+	.logo1{
+		display: block;
+		text-align: center;
+		font-family: 'Rouge Script', cursive,sans-serif;
+		font-size: 2em;
+	}
+	nav .nav-item a:hover{
+		text-decoration: none;
+		padding-top: 0em;
+	}
+	.header-form{
+		padding-top: 35vh;
+		padding-left: 0vw;
+	}
+	/*--------------footer-------------*/
+	footer{
+		font-size: 1.4em;
+		}
+}

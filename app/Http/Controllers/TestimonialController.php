@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Session;
 use App\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Session;
 
 class TestimonialController extends Controller
 {
@@ -13,6 +13,7 @@ class TestimonialController extends Controller
     {
         $this->middleware('auth');
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -21,11 +22,10 @@ class TestimonialController extends Controller
     public function index()
     {
         $user = Auth::user();
-        if($user->admin){
+        if ($user->admin) {
             $testimonals = Testimonial::all();
-        }
-        else{
-            $testimonals = Testimonial::where('user_id',$user->id)->get();
+        } else {
+            $testimonals = Testimonial::where('user_id', $user->id)->get();
         }
         return view('Testimonials.index')->withTestimonials($testimonals);
     }
@@ -38,7 +38,7 @@ class TestimonialController extends Controller
     public function create()
     {
         $user = Auth::user();
-        if($user->admin){
+        if ($user->admin) {
             return redirect('/home');
         }
         return view('Testimonials.create');
@@ -47,14 +47,15 @@ class TestimonialController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $this->validate($request,[
-           'title' => 'required|min:2|string',
-           'description' => 'required|min:2|string',
+        $this->validate($request, [
+            'user_id' => 'unique:testimonials',
+            'title' => 'required|min:2|string',
+            'description' => 'required|min:2|string',
         ]);
 
         $user = Auth::user();
@@ -63,6 +64,7 @@ class TestimonialController extends Controller
         $testimonial->description = $request->description;
         $testimonial->user_id = $user->id;
         $testimonial->save();
+        Session::flash('success', 'Testimonials Created Successfully!');
         return redirect('testimonial');
     }
 
@@ -70,14 +72,14 @@ class TestimonialController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         $user = Auth::user();
         $testimonial = Testimonial::findOrFail($id);
-        if($user->admin){
+        if ($user->admin) {
             return redirect('/home');
         }
         return view('Testimonials.edit')->withTestimonial($testimonial);
@@ -86,13 +88,13 @@ class TestimonialController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request,[
+        $this->validate($request, [
             'title' => 'required|min:2|string',
             'description' => 'required|min:2|string',
         ]);
@@ -103,25 +105,25 @@ class TestimonialController extends Controller
         $testimonial->description = $request->description;
         $testimonial->user_id = $user->id;
         $testimonial->save();
-
+        Session::flash('success', 'Testimonials Updated Successfully!');
         return redirect('testimonial');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         $testimonial = Testimonial::findOrFail($id);
-        if($testimonial->approved)
-        {
-            Session::flash('success','Approved testimonials cannot be deleted !');
+        if ($testimonial->approved) {
+            Session::flash('success', 'Approved testimonials cannot be deleted !');
             return redirect()->back();
         }
         $testimonial->delete();
+        Session::flash('success', 'Testimonials Destroyed Successfully!');
         return redirect('testimonial');
     }
 
@@ -131,6 +133,7 @@ class TestimonialController extends Controller
         $testimonial->approved = 1;
         $testimonial->save();
 
+        Session::flash('success', 'Testimonials Approved Successfully!');
         return redirect('testimonial');
 
     }
@@ -141,6 +144,7 @@ class TestimonialController extends Controller
         $testimonial->approved = 0;
         $testimonial->save();
 
+        Session::flash('success', 'Testimonials Disapproved Successfully!');
         return redirect('testimonial');
 
     }

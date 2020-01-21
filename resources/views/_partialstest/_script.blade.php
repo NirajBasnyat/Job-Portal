@@ -2,8 +2,6 @@
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>--}}
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 @yield('js')
 {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>--}}
@@ -19,6 +17,14 @@
 <script src="{{ asset('js/main.js') }}"></script>
 <script src="{{ asset('js/test.js') }}"></script>
 <script src="{{asset('js/toastr.min.js')}}"></script>
+
+<!-- TinyMCE Editor -->
+<script src='https://cdn.tiny.cloud/1/b19k6pcig8syloqsxwtdc7fgdm7o0qkv0zhsftyzsqi7hef9/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: '#editor'
+    });
+</script>
 <script>
     @if(Session::has('success'))
         toastr.success("{{Session::get('success')}}");

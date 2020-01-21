@@ -35,8 +35,8 @@
 
                                 <div class="col-12 col-md-12 p-2">
                                     <div class="form-group">
-                                        <label for="article-ckeditor" class="gray">Description</label>
-                                        <textarea class="form-control" id="article-ckeditor" name="description" rows="3" required>{{old('description')}}</textarea>
+                                        <label for="editor" class="gray">Description</label>
+                                        <textarea class="form-control" id="editor" name="description" rows="3" required>{{old('description')}}</textarea>
                                     </div>
                                 </div>
 

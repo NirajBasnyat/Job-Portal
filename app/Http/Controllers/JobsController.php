@@ -12,8 +12,8 @@ class JobsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('provider')->except('show');
-        $this->middleware('seeker')->only('show');
+        $this->middleware('provider')->except('show','cat');
+        $this->middleware('seeker')->only('show','cat');
     }
 
     public function index()
@@ -163,5 +163,11 @@ class JobsController extends Controller
         $job->delete();
         Session::flash('success', 'Job deleted successfully');
         return redirect()->route('jobs.index');
+    }
+
+    public function cat($id)
+    {
+        $jobs = Job::where('category_id',$id)->get();
+        return view('Jobs.job_cat')->withJobs($jobs);
     }
 }
