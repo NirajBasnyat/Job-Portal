@@ -40,7 +40,7 @@
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="inputState">Job Category</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" name="category_id">
                     <option selected>Choose...</option>
                     @foreach($categories as $category)
                         <option value="{{$category->id}}">{{$category->category_name}}</option>
