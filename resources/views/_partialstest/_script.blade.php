@@ -19,7 +19,8 @@
 <script src="{{asset('js/toastr.min.js')}}"></script>
 
 <!-- TinyMCE Editor -->
-<script src='https://cdn.tiny.cloud/1/b19k6pcig8syloqsxwtdc7fgdm7o0qkv0zhsftyzsqi7hef9/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+{{-- <script src='https://cdn.tiny.cloud/1/b19k6pcig8syloqsxwtdc7fgdm7o0qkv0zhsftyzsqi7hef9/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script> --}}
+<script src="https://cdn.tiny.cloud/1/3kdez38m3s5l72keyuk46qbz9e0ogh5uzdkbmts0hen8ug39/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
     tinymce.init({
         selector: '#editor'

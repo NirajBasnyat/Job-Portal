@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a97e99-e36b-4d95-a8b8-7572e85fd9c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/interface.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SeekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SeekerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Seeker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Seeker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/JobsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/JobsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Applicant/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Applicant/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Job_Provider/company.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Job_Provider/company.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Job_Provider/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Job_Provider/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Job_Seeker/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Job_Seeker/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Proposal/shortlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Proposal/shortlist.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/_inc/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_inc/_nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_partialstest/_script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_partialstest/_script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,44 +44,44 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/BookmarksController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/resources/views/Job_Provider/show.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Middleware/Seeker.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_script.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_navbar.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resources/views/welcome.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/TestimonialController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resources/views/Testimonials/index.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resources/views/_inc/_nav.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ApplicantController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ProposalsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/resources/views/Proposal/shortlist.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/public/css/main.scss" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/database/seeds/JobsTableSeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Kernel.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/public/css/main.css" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/WorksController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/EducationsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Notifications/NoticeAddedNotification.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/SkillsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/public/js/script.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resources/views/Job_Seeker/profile.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ProvidersController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/resources/views/Job_Seeker/all_jobs.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/SeekerController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/routes/web.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Job.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/public/app/css/style.css" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_sidebar.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Job.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/Jobs/show.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/JobsController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Kernel.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Notifications/NoticeAddedNotification.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Middleware/Seeker.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Proposal/shortlist.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Job_Seeker/all_jobs.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Job_Seeker/profile.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/css/main.scss" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Job_Provider/show.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/css/main.css" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/Job_Provider/company.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Testimonials/index.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_navbar.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/database/seeds/JobsTableSeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_script.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/js/script.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/_partialstest/_sidebar.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ProposalsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/WorksController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/TestimonialController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ApplicantController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/ProvidersController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/JobsController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/SeekerController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/BookmarksController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/SkillsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/EducationsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/welcome.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/routes/web.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/_inc/_nav.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -162,7 +178,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../erpsms" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -244,6 +260,16 @@
       <workItem from="1579594069563" duration="3741000" />
       <workItem from="1579747475814" duration="1084000" />
       <workItem from="1579769621242" duration="1945000" />
+      <workItem from="1580633954464" duration="60000" />
+      <workItem from="1580727404310" duration="1076000" />
+      <workItem from="1580728633318" duration="4121000" />
+      <workItem from="1580870621412" duration="635000" />
+      <workItem from="1583036025940" duration="14000" />
+      <workItem from="1583118717540" duration="1697000" />
+      <workItem from="1583463554369" duration="802000" />
+      <workItem from="1584168237622" duration="35000" />
+      <workItem from="1584950999540" duration="651000" />
+      <workItem from="1584960121306" duration="758000" />
     </task>
     <servers />
   </component>
@@ -268,9 +294,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="155" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1579595102910" />
-    <state x="444" y="155" key="FileChooserDialogImpl" timestamp="1579772350209">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="444" y="127" key="FileChooserDialogImpl" timestamp="1584961207906">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="444" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1584961207906" />
     <state x="444" y="155" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1579772350209" />
     <state x="-312" y="38" key="SettingsEditor" timestamp="1579239645644">
       <screen x="0" y="27" width="1366" height="741" />
@@ -280,9 +307,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="628" height="445" key="SwitcherDM/0.27.1366.741@0.27.1366.741" timestamp="1579769898833" />
-    <state x="309" y="236" width="748" height="334" key="com.intellij.ide.util.TipDialog" timestamp="1579769622355">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="309" y="208" width="748" height="334" key="com.intellij.ide.util.TipDialog" timestamp="1584960146927">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="309" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1584960146927" />
     <state x="309" y="236" width="748" height="334" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1579769622355" />
     <state x="293" y="27" width="770" height="739" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579433065955">
       <screen x="0" y="27" width="1366" height="741" />
@@ -292,17 +320,19 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="425" y="312" width="506" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1579587836187" />
-    <state x="233" y="78" width="900" height="638" key="find.popup" timestamp="1579589434198">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="233" y="51" width="900" height="636" key="find.popup" timestamp="1584960187096">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="233" y="51" width="900" height="636" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1584960187096" />
     <state x="233" y="78" width="900" height="638" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1579589434198" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1579430974088">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.27.1366.741@0.27.1366.741" timestamp="1579430974088" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579769632151">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="346" y="62" width="672" height="676" key="search.everywhere.popup" timestamp="1584960158140">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="346" y="62" width="672" height="676" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1584960158140" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1579769632151" />
     <state x="400" y="304" width="556" height="184" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1579327872182">
       <screen x="0" y="27" width="1366" height="741" />

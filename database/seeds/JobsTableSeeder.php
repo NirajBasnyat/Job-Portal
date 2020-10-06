@@ -14,7 +14,7 @@ class JobsTableSeeder extends Seeder
     {
         Job::create([
             'title' => 'Web Design Project',
-            'description' => 'some lame ass description',
+            'description' => 'some lame  description',
             'budget' => '1200',
             'position_type' => 'part-time',
             'project_duration' => 'Less than 1 month',
@@ -24,7 +24,7 @@ class JobsTableSeeder extends Seeder
 
         Job::create([
             'title' => 'Graphics Design',
-            'description' => 'G for g-birds bitches!!',
+            'description' => 'some simple text!!',
             'budget' => '1000',
             'position_type' => 'full-time',
             'project_duration' => '3 - 6 months',
@@ -34,7 +34,7 @@ class JobsTableSeeder extends Seeder
 
         Job::create([
             'title' => 'Data entry',
-            'description' => 'Data is money niggas !!',
+            'description' => 'Data is money now !!',
             'budget' => '2900',
             'position_type' => 'part-time',
             'project_duration' => 'Less than 1 week',

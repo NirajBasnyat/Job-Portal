@@ -15,7 +15,6 @@ class Seeker
      */
     public function handle($request, Closure $next)
     {
-        //TODO add admin permissions too
         if(auth()->user()->role === 1){
             return $next($request);
         }

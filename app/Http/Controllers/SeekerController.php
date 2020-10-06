@@ -79,9 +79,10 @@ class SeekerController extends Controller
         $profile = Profile::where('user_id', $user->id)->first();
 
         //delete old file
-        if ($profile->avatar) {
-            File::delete(public_path('Avatar/' . $profile->avatar));
-        }
+        // if ($profile->avatar) {
+        //     File::delete(public_path('Avatar/' . $profile->avatar));
+        // }
+        
         //store new file
         if ($request->hasFile('profileAvatar')) {
             $image = $request->file('profileAvatar');

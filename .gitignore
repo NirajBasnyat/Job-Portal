@@ -21,5 +21,7 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+.idea
+.vscode/*
 
 # End of https://www.gitignore.io/api/laravel

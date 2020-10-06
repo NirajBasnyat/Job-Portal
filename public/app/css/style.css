@@ -20,6 +20,10 @@ li{
 a{
 	text-decoration: none;
 }
+
+.card-title{
+	overflow-y: hidden;
+}
 /*
  * ===================================================================
  * 1--------------------------HEADER-SECTION--------------------------
@@ -100,6 +104,7 @@ h3,h4 {
   background: -webkit-linear-gradient(#191654, #43C6AC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow-y: hidden;
 }
 h4{
 	font-size: 24px;

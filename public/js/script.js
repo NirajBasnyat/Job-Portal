@@ -62,7 +62,7 @@ $(document).ready(function () {
         var company = $(this).parent().siblings().find('#addCompany').val();
         var year = $(this).parent().siblings().find('#addYear').val();
         var description = $(this).parent().siblings().find('#addDescription').val();
-         e.preventDefault();
+        e.preventDefault();
 
         $.ajax({
             type: 'post',
@@ -76,7 +76,7 @@ $(document).ready(function () {
                 year: year,
                 description: description
             }, success: function (data) {
-                 location.reload();
+                location.reload();
             }
         });
     });
@@ -103,14 +103,14 @@ $(document).ready(function () {
                 year: year,
                 description: description
             }, success: function (data) {
-                 location.reload();
+                location.reload();
                 //window.location=window.location;
             }
         })
     });
 
     //------------- DELETE_WORK_INFO
-    $(document).on('click', '.deleteWork',function (e) {
+    $(document).on('click', '.deleteWork', function (e) {
         var id = $(this).data('id');
         e.preventDefault();
         $.ajax({
@@ -149,7 +149,7 @@ $(document).ready(function () {
                 institution: institution,
                 completed_year: completed_year,
             }, success: function () {
-                 location.reload();
+                location.reload();
             }
         });
     });
@@ -174,13 +174,13 @@ $(document).ready(function () {
                 institution: institution,
                 completed_year: completed_year,
             }, success: function () {
-                 location.reload();
+                location.reload();
             }
         })
     });
 
     //------------- DELETE_WORK_INFO
-    $(document).on('click', '.deleteEducation',function (e) {
+    $(document).on('click', '.deleteEducation', function (e) {
         var id = $(this).data('id');
         e.preventDefault();
         $.ajax({
